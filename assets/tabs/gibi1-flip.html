@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Gibi Syncann #1</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/page-flip/dist/css/page-flip.css">
+
+<style>
+
+body{
+    margin:0;
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+    font-family:Arial;
+}
+
+.book{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#flipbook{
+    width:500px;
+    height:700px;
+}
+
+.page{
+    background:white;
+    overflow:hidden;
+}
+
+.page img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.controls{
+    position:fixed;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:20px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+    <div id="flipbook">
+
+        <div class="page">
+            <img src="pages/capa.jpg">
+        </div>
+
+        <div class="page">
+            <img src="pages/01.jpg">
+        </div>
+
+        <div class="page">
+            <img src="pages/02.jpg">
+        </div>
+
+        <div class="page">
+            <img src="pages/03.jpg">
+        </div>
+
+        <div class="page">
+            <img src="pages/04.jpg">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="controls">
+    <button id="prev">◀</button>
+    <button id="next">▶</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+
+<script>
+
+const flipBook = new St.PageFlip(
+    document.getElementById("flipbook"),
+    {
+        width:500,
+        height:700,
+
+        size:"stretch",
+
+        minWidth:315,
+        maxWidth:1000,
+
+        minHeight:420,
+        maxHeight:1350,
+
+        showCover:true,
+        autoSize:true,
+
+        usePortrait:true,
+        mobileScrollSupport:false,
+
+        maxShadowOpacity:0.6,
+
+        flippingTime:800,
+
+        drawShadow:true
+    }
+);
+
+flipBook.loadFromHTML(
+    document.querySelectorAll(".page")
+);
+
+document
+.getElementById("next")
+.onclick = ()=>flipBook.flipNext();
+
+document
+.getElementById("prev")
+.onclick = ()=>flipBook.flipPrev();
+
+</script>
+
+</body>
+</html>
