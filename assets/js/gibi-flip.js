@@ -194,7 +194,7 @@ const observer =
             ){
 
                 initGibiFlip(
-                    "assets/pdf/gibi1-syncann.pdf"
+                    "assets/bd/gibi1-syncann.pdf"
                 );
             }
         }
