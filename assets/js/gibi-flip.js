@@ -58,18 +58,17 @@ async function initGibiFlip(containerId, pdfPath) {
         container.innerHTML = "";
 
         const flipBook = new St.PageFlip(container, {
-
-            width: 768,
-            height: 1152,
-
+            width: 600,
+            height: 900,
+            
             size: "stretch",
-
-            minWidth: 300,
-            maxWidth: 1400,
-
-            minHeight: 400,
-            maxHeight: 2200,
-
+            
+            minWidth: 200,
+            maxWidth: 900,
+            
+            minHeight: 300,
+            maxHeight: 1350,
+            
             autoSize: true,
 
             usePortrait: true,
