@@ -128,20 +128,20 @@ async function initGibiFlip(containerId, pdfPath) {
 
 const observer = new MutationObserver(() => {
 
-    const container = document.querySelector("[id^='flipbook']");
+    document.querySelectorAll("[id^='flipbook']").forEach(container => {
 
-    if (!container || container.dataset.loaded) return;
+        if (container.dataset.loaded) return;
 
-    const numero = container.id.match(/\d+$/)?.[0];
+        const numero = container.id.match(/\d+$/)?.[0];
 
-    if (!numero) return;
+        if (!numero) return;
 
-    initGibiFlip(
-        container.id,
-        `assets/bd/gibi${numero}-syncann.pdf`
-    );
+        initGibiFlip(
+            container.id,
+            `assets/bd/gibi${numero}-syncann.pdf`
+        );
 
-    observer.disconnect();
+    });
 
 });
 
