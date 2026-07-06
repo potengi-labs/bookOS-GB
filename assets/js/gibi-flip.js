@@ -20,7 +20,7 @@ async function initGibiFlip(containerId, pdfPath) {
             padding:30px;
             text-align:center;
         ">
-            Carregando Gibi...
+            Carregando páginas...
         </div>
     `;
 
@@ -127,9 +127,36 @@ async function initGibiFlip(containerId, pdfPath) {
     }
 }
 
+
 /* ==========================================
    AUTO START
 ========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const livros = {
+        flipbook1: "assets/bd/gibi1-syncann.pdf",
+        flipbook2: "assets/bd/gibi2-syncann.pdf",
+        flipbook3: "assets/bd/gibi3-syncann.pdf"
+    };
+
+    for (const id in livros) {
+
+        if (document.getElementById(id)) {
+
+            initGibiFlip(id, livros[id]);
+            break;
+
+        }
+
+    }
+
+});
+
+
+/* ==========================================
+   AUTO START
+========================================== 
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -138,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!flipbook) return;
 
     const numero = flipbook.id.match(/\d+$/)?.[0];
-
+   
 if (!numero) return;
 
     initGibiFlip(
@@ -146,5 +173,5 @@ if (!numero) return;
         `assets/bd/gibi${numero}-syncann.pdf`
     );
 
-});
+});*/
 
