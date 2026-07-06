@@ -137,7 +137,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!flipbook) return;
 
-    const numero = flipbook.id.replace("flibook", "");
+    const numero = flipbook.id.match(/\d+$/)?.[0];
+
+if (!numero) return;
 
     initGibiFlip(
         flipbook.id,
@@ -145,3 +147,4 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+
