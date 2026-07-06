@@ -183,14 +183,14 @@ const observer =
     new MutationObserver(
         ()=>{
 
-            const flipbook =
+            const flipbook2 =
                 document.getElementById(
                     "flipbook2"
                 );
 
             if(
-                flipbook &&
-                !flipbook.dataset.loaded
+                flipbook2 &&
+                !flipbook2.dataset.loaded
             ){
 
                 initGibiFlip(
