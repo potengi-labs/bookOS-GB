@@ -86,8 +86,8 @@ async function initGibiFlip(containerId, pdfPath) {
 */
        const flipBook = new St.PageFlip(container, {
 
-    width: 300,
-    height: 450,
+   width: 380,
+   height: 570,
 
     size: "fixed",
     autoSize: false,
