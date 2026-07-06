@@ -2,22 +2,16 @@
    GIBI-FLIP.JS
    Syncann Editorial OS
 ========================================== */
+async function initGibiFlip(containerId, pdfPath){
 
-async function initGibiFlip(pdfPath){
+    const container = document.getElementById(containerId);
 
-    const container =
-        document.getElementById(
-            "flipbook2"
-        );
+    if (!container) return;
 
-    if(!container) return;
+   // evita inicialização duplicada
+    if (container.dataset.loaded) return;
 
-    // evita inicialização duplicada
-    if(container.dataset.loaded)
-        return;
-
-    container.dataset.loaded =
-        "true";
+    container.dataset.loaded = "true";
 
     container.innerHTML = `
         <div style="
@@ -179,31 +173,26 @@ async function initGibiFlip(pdfPath){
    AUTO START
 ========================================== */
 
-const observer =
-    new MutationObserver(
-        ()=>{
+const observer = new MutationObserver(() => {
 
-            const flipbook2 =
-                document.getElementById(
-                    "flipbook2"
-                );
+    for (let i = 1; i <= 3; i++) {
 
-            if(
-                flipbook2 &&
-                !flipbook2.dataset.loaded
-            ){
+        const flipbook = document.getElementById(`flipbook${i}`);
 
-                initGibiFlip(
-                    "assets/bd/gibi2-syncann.pdf"
-                );
-            }
+        if (flipbook && !flipbook.dataset.loaded) {
+
+            initGibiFlip(
+                `flipbook${i}`,
+                `assets/bd/gibi${i}-syncann.pdf`
+            );
+
+            break;
         }
-    );
-
-observer.observe(
-    document.body,
-    {
-        childList:true,
-        subtree:true
     }
-);
+
+});
+
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+});
