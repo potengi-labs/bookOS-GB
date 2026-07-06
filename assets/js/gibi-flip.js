@@ -59,6 +59,7 @@ async function initGibiFlip(containerId, pdfPath) {
 
         container.innerHTML = "";
 
+       /*
         const flipBook = new St.PageFlip(container, {
 
             width: 700,
@@ -82,7 +83,23 @@ async function initGibiFlip(containerId, pdfPath) {
             flippingTime: 800
 
         });
+*/
+       const flipBook = new St.PageFlip(container, {
 
+    width: 300,
+    height: 450,
+
+    size: "fixed",
+    autoSize: false,
+
+    showCover: true,
+    usePortrait: false,
+    drawShadow: true,
+    mobileScrollSupport: true,
+    flippingTime: 800
+
+});
+       
         container.flipBook = flipBook;
 
         flipBook.loadFromHTML(pages);
