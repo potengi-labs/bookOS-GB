@@ -64,14 +64,13 @@ async function initGibiFlip(containerId, pdfPath) {
             width: 700,
             height: 1050,
 
-            size: "stretch",
+            size: "fixed",
             minWidth: 300,
             maxWidth: 1200,
 
             minHeight: 450,
             maxHeight: 1800,
            
-            size: "fixed",
             autoSize: false,
 
             showCover: true,
