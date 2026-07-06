@@ -133,7 +133,7 @@ async function initGibiFlip(containerId, pdfPath) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const flipbook = document.querySelector("[id^='flibook']");
+    const flipbook = document.querySelector("[id^='flipbook']");
 
     if (!flipbook) return;
 
