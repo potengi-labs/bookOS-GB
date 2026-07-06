@@ -57,31 +57,28 @@ async function initGibiFlip(containerId, pdfPath) {
 
         container.innerHTML = "";
 
-        const flipBook = new St.PageFlip(container, {
-            width: 600,
-            height: 900,
-            
-            size: "stretch",
-            
-            minWidth: 200,
-            maxWidth: 900,
-            
-            minHeight: 300,
-            maxHeight: 1350,
-            
-            autoSize: true,
+       const flipBook = new St.PageFlip(container, {
 
-            usePortrait: true,
-
-            showCover: true,
-
-            drawShadow: true,
-
-            mobileScrollSupport: true,
-
-            flippingTime: 800
-
-        });
+          width: 450,
+          height: 675,
+      
+          size: "fixed",
+      
+          minWidth: 450,
+          maxWidth: 450,
+      
+          minHeight: 675,
+          maxHeight: 675,
+      
+          autoSize: false,
+      
+          usePortrait: true,
+          showCover: true,
+          drawShadow: true,
+          mobileScrollSupport: true,
+          flippingTime: 800
+      
+      });
 
         flipBook.loadFromHTML(pages);
 
