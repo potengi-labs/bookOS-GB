@@ -13,7 +13,7 @@ async function initGibiFlip(containerId, pdfPath) {
 
     container.innerHTML = `
         <div style="
-            color:white;
+            color:#fff;
             padding:30px;
             text-align:center;
         ">
@@ -28,82 +28,105 @@ async function initGibiFlip(containerId, pdfPath) {
             .promise;
 
         const pages = [];
+        const scale = window.devicePixelRatio > 1 ? 2.5 : 2;
 
         for (let i = 1; i <= pdf.numPages; i++) {
 
             const page = await pdf.getPage(i);
 
             const viewport = page.getViewport({
-                scale: 2
+                scale
             });
 
             const canvas = document.createElement("canvas");
+            const context = canvas.getContext("2d");
 
             canvas.width = viewport.width;
             canvas.height = viewport.height;
 
             await page.render({
-                canvasContext: canvas.getContext("2d"),
+                canvasContext: context,
                 viewport
             }).promise;
 
-            const div = document.createElement("div");
-            div.className = "page";
-            div.appendChild(canvas);
+            const pageDiv = document.createElement("div");
+            pageDiv.className = "page";
+            pageDiv.appendChild(canvas);
 
-            pages.push(div);
+            pages.push(pageDiv);
 
         }
 
         container.innerHTML = "";
 
-const flipBook = new St.PageFlip(container, {
+        const flipBook = new St.PageFlip(container, {
 
-    width: 768,
-    height: 1152,
+            width: 768,
+            height: 1152,
 
-    size: "stretch",
+            size: "stretch",
 
-    minWidth: 315,
-    maxWidth: 1400,
+            minWidth: 315,
+            maxWidth: 1400,
 
-    minHeight: 420,
-    maxHeight: 2100,
+            minHeight: 420,
+            maxHeight: 2100,
 
-    autoSize: true,
+            autoSize: true,
 
-    showCover: true,
+            showCover: true,
+            usePortrait: false,
 
-    usePortrait: false,
+            drawShadow: true,
+            mobileScrollSupport: true,
 
-    drawShadow: true,
+            flippingTime: 800
 
-    mobileScrollSupport: true,
+        });
 
-    flippingTime: 800
-
-});
+        container.flipBook = flipBook;
 
         flipBook.loadFromHTML(pages);
 
-        const root = container.parentElement;
+        const root = container.closest(".gibi-viewer") || container.parentElement;
 
-        const nextBtn = root.querySelector(".next-page");
-        const prevBtn = root.querySelector(".prev-page");
-        const indicator = root.querySelector(".page-indicator");
+        const prevBtn = root.querySelector("#prev-page");
+        const nextBtn = root.querySelector("#next-page");
+        const fullscreenBtn = root.querySelector("#fullscreen");
+        const indicator = root.querySelector("#page-indicator");
 
         if (indicator) {
-            indicator.innerText = `1/${pdf.numPages}`;
+            indicator.textContent = `1 / ${pdf.numPages}`;
         }
 
-        nextBtn?.addEventListener("click", () => flipBook.flipNext());
+        prevBtn?.addEventListener("click", () => {
+            flipBook.flipPrev();
+        });
 
-        prevBtn?.addEventListener("click", () => flipBook.flipPrev());
+        nextBtn?.addEventListener("click", () => {
+            flipBook.flipNext();
+        });
 
-        flipBook.on("flip", e => {
+        fullscreenBtn?.addEventListener("click", async () => {
+
+            try {
+
+                if (!document.fullscreenElement) {
+                    await root.requestFullscreen?.();
+                } else {
+                    await document.exitFullscreen?.();
+                }
+
+            } catch (err) {
+                console.error(err);
+            }
+
+        });
+
+        flipBook.on("flip", ({ data }) => {
 
             if (indicator) {
-                indicator.innerText = `${e.data + 1}/${pdf.numPages}`;
+                indicator.textContent = `${data + 1} / ${pdf.numPages}`;
             }
 
         });
@@ -113,15 +136,18 @@ const flipBook = new St.PageFlip(container, {
 
         console.error(err);
 
+        container.dataset.loaded = "";
+
         container.innerHTML = `
             <div style="
-                color:white;
+                color:#fff;
                 padding:20px;
                 text-align:center;
             ">
-                Erro ao carregar PDF
+                Erro ao carregar PDF.
             </div>
         `;
+
     }
 
 }
@@ -132,20 +158,22 @@ const flipBook = new St.PageFlip(container, {
 
 const observer = new MutationObserver(() => {
 
-    document.querySelectorAll("[id^='flipbook']").forEach(container => {
+    document
+        .querySelectorAll("[id^='flipbook']")
+        .forEach(container => {
 
-        if (container.dataset.loaded) return;
+            if (container.dataset.loaded) return;
 
-        const numero = container.id.match(/\d+$/)?.[0];
+            const numero = container.id.match(/\d+$/)?.[0];
 
-        if (!numero) return;
+            if (!numero) return;
 
-        initGibiFlip(
-            container.id,
-            `assets/bd/gibi${numero}-syncann.pdf`
-        );
+            initGibiFlip(
+                container.id,
+                `assets/bd/gibi${numero}-syncann.pdf`
+            );
 
-    });
+        });
 
 });
 
