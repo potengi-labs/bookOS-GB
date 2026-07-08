@@ -1,0 +1,663 @@
+{
+
+  "schema": {
+  "nome": "syncann-universe-schema",
+  "versao": "1.0.0"
+},
+
+  "projeto": {
+    "id": "syncann-stories",
+    "nome": "Projeto Gibis Syncann",
+    "versao": "1.0",
+    "status": "desenvolvimento",
+    "data_criacao": "2026-07-01",
+    "organizacao": "Syncann"
+  },
+
+  "branding": {
+    "slogan": "Ciência, tecnologia e cuidado em sincronia.",
+    "posicionamento": "Educação científica humanizada, visualmente sofisticada e baseada em evidências.",
+    "territorio": "Medicina Canabinoide",
+    "proposta_valor": "Transformar conhecimento científico complexo em experiências visuais acessíveis, confiáveis e memoráveis."
+  },
+
+  "apresentacao": {
+    "descricao": "A Syncann consolidou-se como uma iniciativa que conecta ciência, tecnologia e cuidado em torno da medicina canabinoide baseada em evidências.",
+    "desafio_central": "Transformar conhecimento científico complexo em conteúdos acessíveis, confiáveis e memoráveis.",
+    "solucao": "Criação de um universo narrativo proprietário centrado no personagem institucional NEX."
+  },
+
+  "objetivos": {
+    "principal": "Desenvolver uma plataforma proprietária de comunicação visual e educação científica.",
+    "especificos": [
+      "Criar personagem institucional proprietário",
+      "Definir identidade narrativa",
+      "Desenvolver universo visual",
+      "Implantar o programa Syncann Stories",
+      "Produzir episódio piloto sobre Dor Crônica",
+      "Estruturar metodologia escalável para novos conteúdos"
+    ]
+  },
+
+  "diagnostico_setorial": {
+    "problemas": [
+      {
+        "categoria": "Comunicação excessivamente técnica",
+        "impactos": [
+          "Difícil compreensão para pacientes",
+          "Baixa retenção",
+          "Pouca conexão emocional",
+          "Dependência de formatos tradicionais"
+        ]
+      },
+      {
+        "categoria": "Comunicação excessivamente informal",
+        "impactos": [
+          "Reforço de estigmas",
+          "Associação ao uso recreativo",
+          "Inadequação institucional",
+          "Risco reputacional"
+        ]
+      }
+    ],
+    "oportunidade": "Construir uma plataforma nacional de educação científica humanizada baseada em narrativas visuais."
+  },
+
+  "programa": {
+    "nome": "Gibis Syncann",
+    "tipo": "Universo Educativo Ilustrado",
+    "conceito": "Série contínua de conteúdos ilustrados que traduz temas complexos da medicina canabinoide para linguagem acessível.",
+    "proposito": [
+      "Educar sem simplificar excessivamente",
+      "Humanizar sem perder rigor científico",
+      "Acolher sem abandonar a precisão técnica"
+    ]
+  },
+
+  "publicos": [
+    {
+      "categoria": "Pacientes",
+      "objetivos": [
+        "Compreensão terapêutica",
+        "Adesão ao tratamento",
+        "Redução de inseguranças"
+      ]
+    },
+    {
+      "categoria": "Profissionais de saúde",
+      "objetivos": [
+        "Educação complementar",
+        "Apoio à prática clínica",
+        "Atualização científica"
+      ]
+    },
+    {
+      "categoria": "Parceiros",
+      "objetivos": [
+        "Materiais educativos",
+        "Eventos",
+        "Relacionamento institucional"
+      ]
+    }
+  ],
+
+  "universo_narrativo": {
+    "tema_central": "A busca pelo equilíbrio humano através da ciência.",
+    "macrotemas": [
+      "Sistema Endocanabinoide",
+      "Dor Crônica",
+      "Saúde Mental",
+      "Neurologia",
+      "Sono",
+      "Esporte",
+      "Longevidade",
+      "Inflamação",
+      "Cannabis Medicinal",
+      "Pesquisa Científica"
+    ],
+    "pilares": [
+      "Ciência",
+      "Tecnologia",
+      "Natureza",
+      "Cuidado",
+      "Equilíbrio",
+      "Evidência"
+    ]
+  },
+
+  "episodio_piloto": {
+    "titulo": "Dor Crônica",
+    "formato": "Gibi Educativo Ilustrado",
+    "status": "planejamento",
+    "objetivo": "Demonstrar como a medicina canabinoide pode atuar como terapia adjuvante no manejo da dor crônica."
+  },
+
+  "plataforma": {
+    "nome": "Projeto Gibis Syncann",
+    "formatos": [
+      "Gibis",
+      "Storyboards",
+      "Vídeos",
+      "Posts educativos",
+      "Apresentações",
+      "Cursos",
+      "Eventos"
+    ],
+    "caracteristicas": [
+      "Escalável",
+      "Multiplataforma",
+      "Baseada em evidências",
+      "Visualmente consistente"
+    ]
+  },
+
+  "diretrizes_cientificas": {
+    "principios": [
+      "Não prometer cura",
+      "Não exagerar benefícios",
+      "Basear-se em evidências",
+      "Respeitar individualização terapêutica",
+      "Exigir acompanhamento profissional"
+    ]
+  },
+
+  "visao_futura": {
+    "objetivo": "Transformar a Syncann na principal plataforma brasileira de educação visual em medicina canabinoide baseada em evidências."
+  },
+
+
+  "projeto_gibis_syncann": {
+    "nome": "Projeto Gibis Syncann",
+    "tipo": "Plataforma Educativa Ilustrada",
+    "status": "desenvolvimento",
+
+    "apresentacao": {
+      "descricao": "O Projeto Gibis Syncann nasce da proposta de utilizar a linguagem visual e narrativa das histórias em quadrinhos como ferramenta de comunicação, educação e aproximação do público com temas relacionados à cannabis medicinal, ciência, saúde e qualidade de vida.",
+      "proposta": "A partir de uma abordagem lúdica, acessível e informativa, os gibis buscarão traduzir conteúdos técnicos para uma linguagem de fácil compreensão, utilizando personagens, narrativas e elementos visuais capazes de criar conexão emocional com diferentes públicos.",
+      "objetivo_comunicacional": "Unir informação científica, criatividade e entretenimento, fortalecendo a comunicação da marca Syncann através de conteúdos educativos multiplataforma."
+    },
+
+    "objetivo_geral": {
+      "descricao": "Desenvolver uma série de histórias em quadrinhos educativas capazes de apresentar conceitos relacionados à cannabis medicinal, sistema endocanabinoide, saúde, esporte, dor crônica, neurodiversidade e bem-estar de forma acessível e humanizada."
+    },
+
+    "objetivos_especificos": [
+      "Apresentar conceitos científicos de forma simplificada",
+      "Reduzir dúvidas e desinformações relacionadas ao tema",
+      "Criar personagens e narrativas que aproximem o público do conteúdo",
+      "Desenvolver materiais com potencial de uso em redes sociais, eventos e ações educativas",
+      "Construir uma identidade narrativa própria para a Syncann"
+    ],
+
+    "conceito_narrativo": {
+      "descricao": "Universo educativo ilustrado baseado em ciência, cuidado, tecnologia e equilíbrio humano.",
+
+      "colecao_inicial": [
+        {
+          "id": "gibi_01",
+          "titulo": "Cannabis Medicinal: Conhecimento e Ciência",
+          "tema_central": "Introdução à cannabis medicinal",
+          "objetivos": [
+            "Explicar o que é cannabis medicinal",
+            "Apresentar o Sistema Endocanabinoide",
+            "Diferenciar uso medicinal e conceitos equivocados",
+            "Desmistificar a cannabis através da ciência"
+          ],
+          "macrotemas": [
+            "Cannabis medicinal",
+            "Sistema Endocanabinoide",
+            "História da cannabis",
+            "Canabinoides",
+            "Evidências científicas"
+          ]
+        },
+
+        {
+          "id": "gibi_02",
+          "titulo": "Cannabis, Cérebro e Saúde Mental",
+          "tema_central": "Neurociência, neurodiversidade e equilíbrio",
+          "objetivos": [
+            "Explicar o funcionamento do sistema nervoso",
+            "Apresentar conceitos de neurodiversidade",
+            "Discutir saúde mental baseada em evidências",
+            "Relacionar ciência e qualidade de vida"
+          ],
+          "macrotemas": [
+            "Neurociência",
+            "Sistema nervoso",
+            "Neurodiversidade",
+            "Saúde mental",
+            "Equilíbrio fisiológico"
+          ]
+        },
+
+        {
+          "id": "gibi_03",
+          "titulo": "Cannabis, Esporte e Movimento",
+          "tema_central": "Cannabis medicinal aplicada ao cuidado em saúde",
+          "objetivos": [
+            "Apresentar conceitos de dor crônica",
+            "Explicar recuperação muscular",
+            "Discutir o uso de cannabis na rotina esportiva",
+            "Relacionar corpo, movimento e saúde"
+          ],
+          "macrotemas": [
+            "Esporte",
+            "Dor crônica",
+            "Inflamação",
+            "Recuperação muscular",
+            "Qualidade de vida"
+          ]
+        }
+      ]
+    },
+
+    "diretrizes_editoriais": {
+      "linguagem": [
+        "Didática",
+        "Humanizada",
+        "Acessível",
+        "Baseada em evidências",
+        "Visualmente envolvente"
+      ],
+
+      "restricoes": [
+        "Não prometer cura",
+        "Não exagerar benefícios terapêuticos",
+        "Não substituir avaliação médica",
+        "Não utilizar linguagem promocional"
+      ],
+
+      "objetivo_final": "Ao concluir cada edição, o leitor deve sentir que compreendeu um tema complexo através de uma experiência narrativa agradável."
+    },
+
+
+    "ecossistema_multiplataforma": [
+      "Gibis impressos",
+      "Gibis digitais",
+      "Redes sociais",
+      "Eventos científicos",
+      "Apresentações",
+      "Storyboards",
+      "Vídeos educativos",
+      "Plataforma Syncann Stories"
+    ]
+  },
+
+  "universo_syncann": {
+
+"personagens": [
+
+  {
+    "id": "dra_synn",
+    "nome": "Dra. Synn",
+    "tipo": "personagem_principal",
+
+    "personalidade": [
+      "empática",
+      "didática",
+      "científica",
+      "curiosa"
+    ],
+
+    "papel":
+      "guia científica do universo",
+
+    "visual": {
+      "cores": [
+        "#6A2C91",
+        "#2E7D32",
+        "#8BC34A"
+      ]
+    }
+  },
+
+  {
+    "id": "nex",
+    "nome": "NEX",
+    "tipo": "mascote"
+  }
+],
+
+    "locacoes": [],
+
+    "organizacoes": [],
+
+    "conceitos": [],
+
+"edicoes": [
+
+ {
+   "id":"001",
+   "titulo":"Cannabis Medicinal",
+   "status":"roteiro",
+
+   "capitulos":[
+
+      {
+         "id":"01",
+         "titulo":"A Descoberta"
+      },
+
+      {
+         "id":"02",
+         "titulo":"Sistema Endocanabinoide"
+      }
+   ]
+ }
+],
+
+    "bibliografia": [],
+
+"paleta_visual": {
+
+   "primarias": {
+
+      "roxo":"#6A2C91",
+      "verde":"#2E7D32",
+      "verde_claro":"#8BC34A"
+   },
+
+   "secundarias": {
+
+      "branco":"#FFFFFF",
+      "cinza":"#9FA3A8"
+   }
+},
+
+"estilo_artistico": {
+
+   "referencia":
+      "graphic novel educativa contemporânea",
+
+   "caracteristicas":[
+
+      "semi-realista",
+      "cinematográfico",
+      "acolhedor",
+      "educacional",
+      "expressivo",
+      "alto detalhamento"
+   ],
+
+   "proibicoes":[
+
+      "estilo infantil",
+      "traço caricatural exagerado",
+      "visual publicitário",
+      "visual recreativo da cannabis"
+   ]
+},
+
+"base_cientifica": {
+
+   "politica": {
+
+      "baseado_em_evidencias": true,
+      "proibido_prometer_cura": true,
+      "exigir_acompanhamento_medico": true
+   },
+
+   "fontes": [
+
+      "PubMed",
+      "Cochrane",
+      "Nature",
+      "The Lancet",
+      "JAMA",
+      "Guia do Prescritor Syncann"
+   ],
+
+   "nivel_evidencia": [
+  "meta-analises",
+  "ensaios_clinicos_randomizados",
+  "revisoes_sistematicas",
+  "estudos_observacionais"
+],
+
+   "restricoes":[
+      "nao_prometer_cura",
+      "nao_exagerar_beneficios",
+      "nao_substituir_medico"
+   ]
+},
+
+
+  "command_engine": {
+
+    "storytelling_roteiro": {
+      "comando": "CRIAR_ROTEIRO",
+      "nome": "Storytelling & Roteiro Científico",
+      "missao": "Transformar conteúdos científicos complexos em narrativas envolventes, acessíveis e emocionalmente conectadas, mantendo rigor científico e linguagem humanizada.",
+
+      "descricao": "Este agente é responsável pela construção narrativa do universo Syncann. Atua como roteirista científico, organizando conceitos técnicos em histórias capazes de educar, emocionar e gerar identificação. Seu papel não é produzir aulas ou artigos científicos, mas criar experiências narrativas que despertem curiosidade, facilitem a compreensão e fortaleçam a retenção do conhecimento.",
+
+      "responsabilidades": [
+        "Desenvolver narrativas educativas",
+        "Estruturar capítulos e episódios",
+        "Construir arcos dramáticos",
+        "Criar diálogos naturais",
+        "Traduzir conceitos científicos complexos",
+        "Desenvolver personagens narrativos",
+        "Criar conexões emocionais",
+        "Adaptar linguagem para diferentes públicos"
+      ],
+
+      "entradas": [
+        "tema",
+        "objetivos educacionais",
+        "base científica",
+        "personagens",
+        "público-alvo",
+        "mensagem principal"
+      ],
+
+      "saidas": [
+        "sinopse",
+        "estrutura narrativa",
+        "roteiro completo",
+        "capítulos",
+        "cenas",
+        "diálogos",
+        "mensagens educativas"
+      ],
+
+      "diretrizes": [
+        "Priorizar storytelling sobre exposição",
+        "Utilizar linguagem acessível",
+        "Manter rigor científico",
+        "Evitar tom professoral",
+        "Criar identificação emocional",
+        "Não promover terapias ou prometer cura"
+      ]
+    },
+
+    "storyboarder": {
+      "comando": "CRIAR_STORYBOARD",
+      "nome": "Storyboarder Científico Cinematográfico",
+      "missao": "Converter roteiros científicos em sequências visuais claras, emocionais e cinematográficas.",
+
+      "descricao": "Este agente transforma roteiros em linguagem visual. Atua como diretor de cinema e diretor de arte simultaneamente, organizando enquadramentos, ritmo narrativo, composição visual e fluxo emocional. Sua função principal é garantir que conceitos científicos sejam visualmente compreendidos pelo leitor.",
+
+      "responsabilidades": [
+        "Planejar enquadramentos",
+        "Definir ritmo visual",
+        "Criar composição cinematográfica",
+        "Organizar fluxo de leitura",
+        "Definir expressões emocionais",
+        "Estabelecer hierarquia visual",
+        "Traduzir ciência em imagens"
+      ],
+
+      "entradas": [
+        "roteiro",
+        "personagens",
+        "ambientes",
+        "objetivos educacionais"
+      ],
+
+      "saidas": [
+        "páginas",
+        "quadros",
+        "enquadramentos",
+        "movimentos de câmera",
+        "expressões",
+        "descrições visuais"
+      ],
+
+      "diretrizes": [
+        "Utilizar linguagem cinematográfica",
+        "Priorizar clareza visual",
+        "Valorizar emoções",
+        "Evitar excesso de informação por quadro",
+        "Criar ritmo narrativo fluido",
+        "Aplicar princípios de graphic novels contemporâneas"
+      ]
+    },
+
+    "designer_quadrinhos": {
+      "comando": "CRIAR_HQ",
+      "nome": "Designer de Quadrinhos Educativos",
+      "missao": "Transformar storyboards em páginas de quadrinhos visualmente sofisticadas, educativas e envolventes.",
+
+      "descricao": "Este agente atua como diretor editorial de arte sequencial. É responsável pela composição gráfica das páginas, distribuição dos quadros, equilíbrio entre texto e imagem e construção da experiência visual do leitor.",
+
+      "responsabilidades": [
+        "Diagramar páginas",
+        "Definir quantidade de quadros",
+        "Organizar fluxo visual",
+        "Distribuir balões",
+        "Construir ritmo de leitura",
+        "Aplicar identidade visual Syncann",
+        "Garantir legibilidade"
+      ],
+
+      "entradas": [
+        "storyboard",
+        "roteiro",
+        "personagens",
+        "diretrizes visuais"
+      ],
+
+      "saidas": [
+        "layout de página",
+        "quadros",
+        "balões",
+        "legendas",
+        "composição visual"
+      ],
+
+      "diretrizes": [
+        "Priorizar leitura intuitiva",
+        "Equilibrar informação e emoção",
+        "Utilizar design contemporâneo",
+        "Evitar excesso de texto",
+        "Preservar clareza científica"
+      ]
+    },
+
+    "designer_personagens": {
+      "comando": "CRIAR_PERSONAGEM",
+      "nome": "Designer de Personagens Syncann",
+      "missao": "Criar personagens memoráveis, emocionalmente conectáveis e visualmente consistentes com o universo Syncann.",
+
+      "descricao": "Este agente é responsável pelo desenvolvimento completo dos personagens do universo narrativo. Atua combinando psicologia, narrativa, design visual e linguagem corporal para construir personagens que transmitam confiança, empatia e credibilidade científica.",
+
+      "responsabilidades": [
+        "Criar identidade visual",
+        "Definir personalidade",
+        "Desenvolver linguagem corporal",
+        "Criar expressões faciais",
+        "Definir figurinos",
+        "Construir arquétipos",
+        "Garantir consistência visual"
+      ],
+
+      "entradas": [
+        "nome",
+        "papel narrativo",
+        "personalidade",
+        "faixa etária",
+        "função educativa"
+      ],
+
+      "saidas": [
+        "biografia",
+        "descrição visual",
+        "expressões",
+        "roupas",
+        "paleta cromática",
+        "poses",
+        "prompt visual"
+      ],
+
+      "diretrizes": [
+        "Criar personagens acolhedores",
+        "Evitar caricaturas excessivas",
+        "Priorizar diversidade",
+        "Transmitir credibilidade",
+        "Valorizar expressividade",
+        "Garantir reutilização multiplataforma"
+      ]
+    },
+
+    "designer_ambientes": {
+      "comando": "CRIAR_AMBIENTE",
+      "nome": "Designer de Ambientes Narrativos",
+      "missao": "Construir cenários capazes de transformar conceitos científicos abstratos em espaços visualmente compreensíveis e emocionalmente envolventes.",
+
+      "descricao": "Este agente atua como arquiteto visual do universo Syncann. É responsável por desenvolver ambientes físicos, conceituais e metafóricos que apoiem a narrativa e facilitem a compreensão científica.",
+
+      "responsabilidades": [
+        "Criar cenários físicos",
+        "Criar cenários conceituais",
+        "Construir ambientes metafóricos",
+        "Definir atmosfera",
+        "Desenvolver iluminação",
+        "Criar elementos simbólicos",
+        "Garantir coerência visual"
+      ],
+
+      "entradas": [
+        "tema científico",
+        "personagens",
+        "objetivo educacional",
+        "emoção desejada",
+        "contexto narrativo"
+      ],
+
+      "saidas": [
+        "descrição do ambiente",
+        "arquitetura visual",
+        "paleta cromática",
+        "iluminação",
+        "objetos cênicos",
+        "elementos simbólicos",
+        "prompt visual"
+      ],
+
+      "diretrizes": [
+        "Utilizar visual contemporâneo",
+        "Favorecer compreensão científica",
+        "Criar sensação de descoberta",
+        "Equilibrar realismo e simbolismo",
+        "Priorizar estética sofisticada",
+        "Manter identidade visual Syncann"
+      ]
+    },
+
+    "workflow": {
+  "sequencia": [
+    "storytelling_roteiro",
+    "storyboarder",
+    "designer_ambientes",
+    "designer_personagens",
+    "designer_quadrinhos"
+  ]
+}
+
+  }
+
+ }
+
+}
